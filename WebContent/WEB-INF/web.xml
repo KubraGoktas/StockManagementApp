@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>StockManagementApp</display-name>
+  <welcome-file-list>
+    <welcome-file>loginPage.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+    
+   <jsp-config>
+   
+        <jsp-property-group>
+            <description>role page settings</description>
+            <url-pattern>/stokOp.jsp</url-pattern>
+            <url-pattern>/customerOp.jsp</url-pattern>
+            <url-pattern>/companyOp.jsp</url-pattern>
+            <url-pattern>/productOp.jsp</url-pattern>
+            <url-pattern>/billOp.jsp</url-pattern>
+            <include-prelude>/personelPage.jsp</include-prelude>
+        </jsp-property-group>
+        
+         <jsp-property-group>
+            <description>admin page settings</description>
+            <url-pattern>/userOp.jsp</url-pattern>
+            <url-pattern>/categoryOp.jsp</url-pattern>
+            <url-pattern>/update-user.jsp</url-pattern>
+            <url-pattern>/update-category.jsp</url-pattern>
+            <url-pattern>/update-customer.jsp</url-pattern>
+            <include-prelude>/adminPage.jsp</include-prelude>
+        </jsp-property-group>
+        
+    </jsp-config>
+    
+</web-app>
